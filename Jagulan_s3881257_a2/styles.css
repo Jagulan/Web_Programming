@@ -1,0 +1,293 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background: HSL(200, 100%, 50%);
+  color: HSL(50, 100%, 95%);
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: HSL(50, 100%, 30%) 3px solid;
+}
+
+header a {
+  color: HSL(50, 100%, 70%);
+}
+
+
+
+header #branding {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+header #branding h1 {
+  margin-left: 15px;
+}
+
+header #branding img {
+  width: 100px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav a {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+}
+
+header .highlight, header .current a {
+  color: HSL(50, 100%, 30%);
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 50px; /* Adjust based on desired logo size */
+  margin-right: 10px;
+}
+
+/* Sticky Navigation Styles */
+.sticky-nav {
+  background: #50b3a2;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sticky-nav a {
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* LVHA (LoVe HAte) rule */
+.sticky-nav a:link,
+.sticky-nav a:visited {
+  background: #50b3a2;
+}
+
+.sticky-nav a:hover {
+  background: #c7c415;
+}
+
+.sticky-nav a:active {
+  background: #0f97bd;
+}
+
+.sticky-nav .highlight,
+.sticky-nav .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+  padding: 30px 0;
+}
+
+#about, #staff, #services, #booking {
+  margin: 20px 0;
+}
+
+#about img {
+  width: 100%;
+}
+
+.about-section {
+  position: relative;
+}
+
+.carousel-inner img {
+  height: 500px; /* Adjust as necessary */
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  bottom: 20%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 20%; /* Adjust as necessary */
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  z-index: 2; /* To ensure the content stays on top */
+}
+
+
+.about-section {
+  background-color: #e6f7ff; /* Light blue */
+  padding: 20px 0;
+}
+
+.staff-section {
+  background-color: #e6ffe6; /* Light green */
+  padding: 20px 0;
+}
+
+.staff-image {
+  max-width: 250px; /* Adjust based on desired image size */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#about img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to the image */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 15px;
+}
+
+.col img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Form Styles */
+form {
+  padding: 20px;
+  background: #f4f4f4;
+  border: 1px solid #e6e6e6;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="date"], form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px 40px;
+  background: #50b3a2;
+  color: white;
+  border: 0;
+  margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+  background: #3a9270;
+}
+
+form input[type="checkbox"] {
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header li {
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  header ul {
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #d9e9d9; /* Different shade for footer */
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+.pill-group {
+  display: inline-flex;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid #00AAFF;
+  background-color: #00AAFF;
+}
+
+.segment {
+  flex-grow: 1;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.segment:hover {
+  background-color: #FFD400;
+}
+
+.segment.selected {
+  background-color: #FFD400;
+}
